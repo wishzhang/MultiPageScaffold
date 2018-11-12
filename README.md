@@ -28,11 +28,15 @@ npm test
 ```
 
 ### 代码文件目录
-- assets/         公共资源
-- components/     公共组件
-- pages/           存放页面
-    - index/
-       - main.js  规定入口文件名只能是main.js
+- src/
+  - assets/         公共资源
+  - components/     公共组件
+  - pages/           存放页面
+      - test/       注意：不可再嵌套文件夹（未配置)
+        - main.js  规定入口文件名只能是main.js
+        - index.html
+- static 打包需要用到的文件夹，将打包后的一些资源放在该文件夹
+
 
 ### 注意
 开发环境下访问示例：http://localhost:8080/pages/index/
