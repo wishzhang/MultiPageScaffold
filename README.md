@@ -1,6 +1,7 @@
 # multipage-scaffold
 
 > vue多页面脚手架
+> 指南：https://www.jianshu.com/p/c2c3e7ad38dc
 
 ## Build Setup
 
@@ -35,7 +36,7 @@ npm test
       - test/       注意：不可再嵌套文件夹（未配置)
         - main.js  规定入口文件名只能是main.js
         - index.html
-- static 打包需要用到的文件夹，将打包后的一些资源放在该文件夹
+- static 打包需要用到的文件夹，将打包后的一些资源放在该文件夹(会在dist目录下生成static文件夹)
 
 
 ### 注意
