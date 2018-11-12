@@ -36,7 +36,8 @@ let webpackConfig = {
   entry: entries,
   output: {
     path: config.build.assetsRoot,  //输出目录，dev模式下将文件生成在内存中
-    filename:'pages/[name]/[name].js'
+    filename:'pages/[name]/[name].js',
+    publicPath: '../../'  //一般为图片等相对路径资源目录，相对输出的html页面
     //filename: utils.assetsPath('js/[name].[chunkhash].js')
     //chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
@@ -85,6 +86,7 @@ let webpackConfig = {
       }
     ]
   },
+  plugins:[],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
@@ -113,9 +115,6 @@ function pack (entries, module) {
       inject: true,
       chunks: ['manifest', 'vendor', path]    // !注意：必须先引入公共依赖,否则打包报错，webpackJsonp is not defined
     }
-/*    if(!module.plugins){
-      module.plugins=[]
-    }*/
     module.plugins.push(new HtmlWebpackPlugin(conf))
   }
 }

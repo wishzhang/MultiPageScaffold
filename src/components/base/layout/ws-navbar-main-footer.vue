@@ -36,7 +36,7 @@
     height: 88px;
     padding: 0 30px;
     background-color: orange;
-    background-image: url('./bg-header.png');
+    background-image: url(./bg-header.png);
 
     .left {
       display: flex;
@@ -89,6 +89,5 @@
     background: -moz-linear-gradient(#ff8901, #fa3810); /* Firefox 3.6 - 15 */
     background: linear-gradient(#ff8901, #fa3810); /* 标准的语法 */
   }
-
 
 </style>
